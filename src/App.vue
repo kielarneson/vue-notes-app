@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Toolbar />
     <div class="note-container">
       <div class="note-selectors">
         <div class="note-selector active">
@@ -28,8 +29,11 @@
 </template>
 
 <script>
+import Toolbar from "./components/Toolbar.vue";
+
 export default {
   name: "app",
+  components: { Toolbar },
 };
 </script>
 
